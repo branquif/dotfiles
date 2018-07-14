@@ -2,7 +2,7 @@
 	name = Fabio Branquinho
 	email = branquif@gmail.com
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.config/git/ignore
 	editor = /usr/local/bin/nvim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"

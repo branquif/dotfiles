@@ -1,10 +1,12 @@
 # Created by https://www.gitignore.io/api/osx,windows,intellij,xcode,java
 
 ### OSX ###
+
 .DS_Store
 .AppleDouble
 .LSOverride
 
+# ignore vscode
 .vscode/
 
 # Thumbnails
