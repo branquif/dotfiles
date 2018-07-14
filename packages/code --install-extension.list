@@ -1,0 +1,16 @@
+#
+# Languages
+ms-python.python
+joaompinto.asciidoctor-vscode
+trixnz.vscode-lua
+yzhang.markdown-all-in-one
+PeterJausovec.vscode-docker
+searKing.preview-vscode
+
+#
+# Extensions
+CoenraadS.bracket-pair-colorizer
+christian-kohler.path-intellisense
+donjayamanne.githistory
+formulahendry.auto-close-tag
+formulahendry.auto-rename-tag

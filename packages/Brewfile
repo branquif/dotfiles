@@ -1,0 +1,104 @@
+# Requirements:
+# homebrew - http://brew.sh/
+# brew bundle - https://github.com/Homebrew/homebrew-bundle
+# cask - https://caskroom.github.io/ (installed automatically)
+# mas-cli - https://github.com/argon/mas
+cask_args appdir: '/Applications'
+
+## install brew packages
+brew 'terminal-notifier'
+tap 'domt4/autoupdate'
+## need to start the auto-update config
+# brew 'autoupdate', args: ["start", "upgrade", "cleanup", "enable-notifications"] 
+
+# update bash
+brew 'bash'
+
+# install fish
+brew 'fish'
+
+# install mac app store cli
+brew 'mas'
+
+# some essential packages
+brew 'ack'
+brew 'coreutils'
+brew 'git'
+brew 'openssl'
+brew 'tmux'
+brew 'duti'
+brew 'findutils', args: ['with-default-names']
+
+# Python stuff
+brew 'python'
+brew 'python@2'
+brew 'pypy'
+brew 'pypy3'
+brew 'ipython'
+
+# download utilities
+brew 'wget'
+brew 'curl'
+brew 'httpie'
+
+# fancy shell stuff
+brew 'grc'
+brew 'direnv'
+brew 'nnn'
+brew 'autojump'
+brew 'htop'
+brew 'neofetch'
+
+# editors
+brew 'readline'
+brew 'xz'
+brew 'neovim'
+
+# Pipenv!
+brew 'pipenv'
+
+# Pandoc
+brew 'pandoc'
+
+
+# image treatment
+brew 'imagemagick'
+
+# JSON query
+brew 'jq'
+
+# languages
+brew 'go'
+brew 'node'
+
+## install cask packages (apps)
+
+# improved terminal app
+cask 'iterm2'
+
+#editors
+cask 'visual-studio-code'
+cask 'sourcetree'
+
+# image optimization app
+cask 'imageoptim'
+
+# macos hacking
+cask 'hammerspoon'
+cask 'karabiner-elements'
+
+mas 'Microsoft Remote Desktop 10', id: 1295203466
+mas 'Unclutter', id: 577085396
+
+
+## for possible later use
+# http proxy app
+# cask 'charles'
+# cask 'dash'
+# cask 'mamp'
+# cask 'screenhero'
+# cask 'simpholders'
+# cask 'postman'
+# cask 'little-snitch'
+# cask 'tunnelblick'
+# case 'sqlitebrowser'

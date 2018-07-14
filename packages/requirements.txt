@@ -1,0 +1,29 @@
+#
+####### example-requirements.txt #######
+#
+###### Requirements without Version Specifiers ######
+
+# default dev tools
+flake8
+coverage
+pylint
+pyaml
+black
+mypy
+
+# repls
+ipython
+jupyter
+
+# documentation
+sphinx
+sphinx_rtd_theme
+doc8
+
+# neovim!
+neovim
+
+# data
+numpy
+pandas
+
