@@ -27,11 +27,11 @@ set -x -g LC_ALL en_GB.UTF-8
 set -x -g LANG en_GB.UTF-8
 
 # Coreutils bin and man folders
-set -x -g PATH (brew --prefix coreutils)/libexec/gnubin $PATH
+#set -x -g PATH (brew --prefix coreutils)/libexec/gnubin $PATH
 # set -x -g MANPATH (brew --prefix coreutils)/libexec/gnuman $MANPATH
 
 # Findutils bin and man folders
-set -x -g PATH (brew --prefix findutils)/libexec/bin $PATH
+#set -x -g PATH (brew --prefix findutils)/libexec/bin $PATH
 # set -x -g MANPATH (brew --prefix findutils)/libexec/gnuman $MANPATH
 
 # Pipenv completions

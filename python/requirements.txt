@@ -3,6 +3,9 @@
 #
 ###### Requirements without Version Specifiers ######
 
+# updating packages
+pip-review
+
 # default dev tools
 flake8
 coverage

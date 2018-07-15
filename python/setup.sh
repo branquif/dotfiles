@@ -17,6 +17,10 @@ else
     error "pyenv could not be installed"
 fi
 
+# install virtualenv at python2
+info "installing python2 virtualenv"
+python2 -m pip install virtualenv
+
 # start pyenv 
 export PATH="~/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
