@@ -5,17 +5,23 @@ cd "$DIR"
 
 . ../scripts/functions.sh
 
-SOURCE="$(realpath .)"
-DESTINATION="$(realpath ~/.config/karabiner)"
+info "Will setup the Rafael Bodill's Neo/vim Config..."
+#https://github.com/rafi/vim-config
 
-info "Setting up Karabiner Elements..."
+substep_info "Cloning the repo"
+git clone git://github.com/rafi/vim-config.git ~/.config/nvim
 
-substep_info "Creating Karabiner Elements folder..."
-mkdir -p $DESTINATION
+substep_info "setup the neovim virtual env"
+cd ~/.config/nvim
+./venv.sh
+
+substep_info "Make install"
+make
+
 
 find * -name "*.json" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
 clear_broken_symlinks "$DESTINATION"
 
-success "Finished setting up Karabiner Elements."
+success "Finished setting up Neovim."

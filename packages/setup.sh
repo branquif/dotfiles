@@ -13,9 +13,6 @@ info "Installing Brewfile packages..."
 brew bundle
 success "Finished installing Brewfile packages."
 
-
-. python_setup.sh
-
 find * -name "*.list" | while read fn; do
     cmd="${fn%.*}"
     set -- $cmd

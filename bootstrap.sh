@@ -35,9 +35,22 @@ fi
 
 # Package control must be executed first in order for the rest to work
 ./packages/setup.sh
+# install bin
+./bin/setup.sh
+#install git
+./git/setup.sh
+#install python
+./python/setup.sh
+#install karabiner
+#./karabiner/setup.sh
+#install hammerspoon
+#./hammerspoon/setup.sh
+#install neovim
+./neovim/setup.sh
+#install fish
+./fish/setup.sh
+#install repos
+#./repos/setup.sh
 
-find * -name "setup.sh" -not -wholename "packages*" | while read setup; do
-    ./$setup
-done
 
 success "Finished installing Dotfiles"

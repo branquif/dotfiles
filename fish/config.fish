@@ -39,8 +39,8 @@ eval (pipenv --completion)
 
 # set pyenv
 # pyenv
-set -x -g PATH /Users/fabio.branquinho/.pyenv/bin $PATH
 status --is-interactive; and source (pyenv init - | psub)
+set -x -g PYENV_ROOT eval(pyenv root)
 
 # npm to use XDG
 # see npm config ls -l | grep /

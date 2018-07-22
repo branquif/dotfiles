@@ -35,6 +35,9 @@ brew 'python@2'
 brew 'pypy'
 brew 'pypy3'
 brew 'ipython'
+brew 'pyenv'
+brew 'pyenv-virtualenv'
+
 
 # download utilities
 brew 'wget'
@@ -47,11 +50,14 @@ brew 'direnv'
 brew 'nnn'
 brew 'autojump'
 brew 'htop'
+brew 'rg'
+brew 'fzf'
 brew 'neofetch'
 
 # editors
 brew 'readline'
 brew 'xz'
+brew 'ctags'
 brew 'neovim'
 
 # Pipenv!
@@ -86,6 +92,12 @@ cask 'imageoptim'
 # macos hacking
 cask 'hammerspoon'
 cask 'karabiner-elements'
+
+# powerline fonts
+cask 'font-inconsolata-g-for-powerline'
+cask 'font-menlo-for-powerline'
+cask 'font-source-code-pro-for-powerline'
+
 
 mas 'Microsoft Remote Desktop 10', id: 1295203466
 mas 'Unclutter', id: 577085396
