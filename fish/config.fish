@@ -7,12 +7,6 @@ set -x -g XDG_CACHE_HOME "$HOME/.cache"
 set -x -g XDG_EXEC_HOME "$HOME/.local/bin"
 set -x -g XDG_RUNTIME_DIR /tmp
 
-#if [ ! -w ${XDG_RUNTIME_DIR:="/run/user/$UID"} ]; then
-#    # echo "\$XDG_RUNTIME_DIR ($XDG_RUNTIME_DIR) not writable. Setting to /tmp." >&2
-#    XDG_RUNTIME_DIR=/tmp
-#fi
-#set -x -g XDG_RUNTIME_DIR
-
 # User bin folder
 set -x -g PATH $XDG_EXEC_HOME $PATH 
 
@@ -22,17 +16,12 @@ set -x -g PATH $XDG_EXEC_HOME $PATH
 # set terminal colors
 set -x -g TERM "xterm-256color"
 
+# set default editor
+set -x -g EDITOR /usr/local/bin/nvim
+
 # set language to use
-set -x -g LC_ALL en_GB.UTF-8
-set -x -g LANG en_GB.UTF-8
-
-# Coreutils bin and man folders
-#set -x -g PATH (brew --prefix coreutils)/libexec/gnubin $PATH
-# set -x -g MANPATH (brew --prefix coreutils)/libexec/gnuman $MANPATH
-
-# Findutils bin and man folders
-#set -x -g PATH (brew --prefix findutils)/libexec/bin $PATH
-# set -x -g MANPATH (brew --prefix findutils)/libexec/gnuman $MANPATH
+set -x -g LC_ALL en_US.UTF-8
+set -x -g LANG en_US.UTF-8
 
 # Pipenv completions
 eval (pipenv --completion)
@@ -40,7 +29,7 @@ eval (pipenv --completion)
 # set pyenv
 # pyenv
 status --is-interactive; and source (pyenv init - | psub)
-set -x -g PYENV_ROOT eval(pyenv root)
+set -x -g PYENV_ROOT eval pyenv root
 
 # npm to use XDG
 # see npm config ls -l | grep /
